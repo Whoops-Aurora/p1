@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './new1.component.css'
 })
 export class New1Component {
-
+  fname: string = 'John';
+  lname: string = 'Doe';
+  age: number = 30;
 }

@@ -1,1 +1,26 @@
 <p>new1 works!</p>
+<br>
+<label for="Firstname">
+    First Name: <input type="text" [(ngModel)]="fname"><br>
+</label>
+
+<label for="Lastname">
+    Last Name: <input type="text" [(ngModel)]="lname"><br>
+</label>
+<label for="age">
+    age: <input type="text" [(ngModel)]="age"><br>
+</label>
+<table border="3">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>age</th>
+    </tr>
+    <tr>
+        <td>{{fname}}</td>
+        <td>{{lname}}</td>
+        <td>{{age}}</td>
+    </tr>
+</table>
+
+
