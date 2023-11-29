@@ -22,12 +22,20 @@
         <td>{{age}}</td>
     </tr>
 </table>
+
 <table border="2" align="center">
     <tr style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         <th>CityName</th>
     </tr>
-    <tr *ngFor="let i of city">
-        <td>{{i}}</td>
+    <ng-container *ngIf="age>20; else allCities">
+        <tr>
+            <td>{{city[0]}}</td>
+        </tr>
+    </ng-container>
+    <ng-template #allCities>
+        <tr *ngFor="let i of city">
+            <td>{{i}}</td>
+        </tr>
+    </ng-template>
 </table>
-
 
